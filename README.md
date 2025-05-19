@@ -2,7 +2,7 @@
 # Overview
 *This is a comprehensive web-based productivity and development tools suite designed to streamline workflows for developers and creative professionals. The application features a modern 3D-inspired UI with multiple integrated tools in a single dashboard.*
 
-#Features
+# Features
 
 Core Tools
 
@@ -46,14 +46,14 @@ Core Tools
   Add/delete functionality
   Date tracking
 
-#Additional Features
+# Additional Features
 
 Dark/Light Mode Toggle - Switch between themes with system preference detection
 3D Visual Elements - Interactive 3D components for enhanced UX
 Responsive Design - Works on all device sizes
 Modern UI - Clean, intuitive interface with animations
 
-#Technical Details
+# Technical Details
 
 Frontend Stack
 
@@ -62,7 +62,7 @@ Frontend Stack
   JavaScript - Interactive functionality
   Font Awesome - Icon library
 
-#Key Implementations
+# Key Implementations
 
 1.Theme System
   CSS variables for theming
@@ -80,13 +80,13 @@ Frontend Stack
   Modular CSS
   Responsive grid layouts
 
-#Setup Instructions
+# Setup Instructions
 
   1.Clone the repository
   2.Open index.html in a modern browser
   3.No build step or dependencies required
 
-#Customization
+# Customization
 
 Edit the following files to customize:
   styles.css - Main styling
@@ -94,7 +94,7 @@ Edit the following files to customize:
   theme.js - Theme logic
   script.js - Application functionality
 
-#Browser Support
+# Browser Support
 
 The application supports all modern browsers including:
   Chrome
@@ -102,7 +102,7 @@ The application supports all modern browsers including:
   Safari
   Edge
 
-#License
+# License
   MIT License - Free for personal and commercial use
 
-Developed by Chandan
+# Developed by Chandan
