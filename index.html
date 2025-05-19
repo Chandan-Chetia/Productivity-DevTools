@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity & Dev Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./theme.css">
+</head>
+<body>
+    
+    <!-- 3D Login Modal -->
+    <div id="loginModal" class="modal-3d">
+        <div class="modal-content-3d">
+            <span class="close-btn">&times;</span>
+            <h2><i class="fas fa-user-shield"></i> Welcome Back</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-3d btn-primary-3d">Sign In</button>
+                <div class="auth-divider">or</div>
+                <button type="button" class="btn-3d btn-google">
+                    <i class="fab fa-google"></i> Continue with Google
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 3D Signup Modal -->
+    <div id="signupModal" class="modal-3d">
+        <div class="modal-content-3d">
+            <span class="close-btn">&times;</span>
+            <h2><i class="fas fa-rocket"></i> Get Started</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn-3d btn-primary-3d">Create Account</button>
+                <div class="auth-divider">or</div>
+                <button type="button" class="btn-3d btn-github">
+                    <i class="fab fa-github"></i> Continue with GitHub
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar-3d">
+        <div class="container">
+            <div class="navbar-brand-3d">
+                <div class="logo-3d">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h1>Productivity &<span> Dev Tools</span></h1>
+            </div>
+            <div class="navbar-actions">
+                <button id="loginBtn" class="btn-3d btn-outline-3d">
+                    <i class="fas fa-sign-in-alt"></i> Sign In
+                </button>
+                <button id="signupBtn" class="btn-3d btn-primary-3d">
+                    <i class="fas fa-user-plus"></i> Sign Up
+                </button>
+            </div>
+        </div>
+           <!-- Theme Toggle Button -->
+ <button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+   
+
+ <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Ultimate Developer <span>Productivity</span> Toolkit</h2>
+                <p>Streamline your workflow with our all-in-one suite of powerful tools designed specifically for developers and creative professionals.</p>
+                <div class="hero-buttons">
+                    <button class="btn-3d btn-primary-3d btn-large">
+                        <i class="fas fa-play"></i> Watch Demo
+                    </button>
+                    <button class="btn-3d btn-outline-3d btn-large">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                
+                <div class="dashboard-preview-3d">
+                    <iframe src="./3dCube.html" width="100%" height="100%" style="border: 1px solid #000;"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main-container">
+        <!-- Tool Grid -->
+        <div class="tools-grid">
+            <!-- Task List -->
+            <div class="tool-card-3d">
+                <div class="tool-header">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Task Manager</h3>
+                    <div class="tool-actions">
+                        <button class="btn-icon-3d"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+                <div class="progress-3d">
+                    <div class="progress-bar-3d" style="--progress: 65%">
+                        <div class="progress-fill-3d"></div>
+                    </div>
+                    <div class="progress-label">65% Complete</div>
+                </div>
+                <ul class="task-list-3d">
+                    <li class="task-item-3d completed">
+                        <div class="task-checkbox-3d">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="task-content">
+                            <span>Implement user auth</span>
+                            <span class="priority-badge high">High</span>
+                        </div>
+                    </li>
+                    <li class="task-item-3d">
+                        <div class="task-checkbox-3d"></div>
+                        <div class="task-content">
+                            <span>Design dashboard</span>
+                            <span class="priority-badge medium">Medium</span>
+                        </div>
+                    </li>
+                    <li class="task-item-3d">
+                        <div class="task-checkbox-3d"></div>
+                        <div class="task-content">
+                            <span>Write documentation</span>
+                            <span class="priority-badge low">Low</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="task-input-3d">
+                    <input type="text" placeholder="Add new task...">
+                    <button class="btn-icon-3d"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            
+            <!-- Pomodoro Timer -->
+            <div class="tool-card-3d pomodoro-card">
+                <div class="tool-header">
+                    <i class="fas fa-clock"></i>
+                    <h3>Pomodoro Timer</h3>
+                    <div class="tool-actions">
+                        <button class="btn-icon-3d"><i class="fas fa-cog"></i></button>
+                    </div>
+                </div>
+                <div class="pomodoro-display-3d">
+                    <div class="timer">25:00</div>
+                    <div class="timer-label">Work Session</div>
+                </div>
+                <div class="pomodoro-controls">
+                    <button class="btn-3d btn-success-3d">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button class="btn-3d btn-danger-3d">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+                <div class="pomodoro-progress">
+                    <div class="session-count">4/8</div>
+                    <div class="session-dots">
+                        <div class="dot completed"></div>
+                        <div class="dot completed"></div>
+                        <div class="dot completed"></div>
+                        <div class="dot completed"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Code Snippets -->
+            <div class="tool-card-3d">
+                <div class="tool-header">
+                    <i class="fas fa-code"></i>
+                    <h3>Code Snippets</h3>
+                    <div class="tool-actions">
+                        <button class="btn-icon-3d"><i class="fas fa-plus"></i></button>
+                    <button class="btn-icon-3d"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+                <div class="snippet-filters">
+                    <select class="select-3d">
+                        <option>All Languages</option>
+                        <option selected>JavaScript</option>
+                        <option>Python</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </select>
+                    <div class="search-input-3d">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search snippets...">
+                    </div>
+                </div>
+                <div class="snippet-list-3d">
+                    <div class="snippet-item-3d">
+                        <div class="snippet-header">
+                            <h4>Array Sorting</h4>
+                            <span class="lang-badge js">JS</span>
+                        </div>
+                        <div class="snippet-preview">
+                            <code>// Sort array in descending order<br>const sorted = array.sort((a, b) => b - a);</code>
+                        </div>
+                        <div class="snippet-actions">
+                            <button class="btn-icon-3d small"><i class="fas fa-copy"></i></button>
+                            <button class="btn-icon-3d small"><i class="fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <div class="snippet-item-3d">
+                        <div class="snippet-header">
+                            <h4>Fetch API Example</h4>
+                            <span class="lang-badge js">JS</span>
+                        </div>
+                        <div class="snippet-preview">
+                            <code>// Basic fetch request<br>fetch(url)<br>  .then(res => res.json())<br>  .then(data => console.log(data));</code>
+                        </div>
+                        <div class="snippet-actions">
+                            <button class="btn-icon-3d small"><i class="fas fa-copy"></i></button>
+                            <button class="btn-icon-3d small"><i class="fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Markdown Editor -->
+            <div class="tool-card-3d markdown-card">
+                <div class="tool-header">
+                    <i class="fas fa-markdown"></i>
+                    <h3>Markdown Editor</h3>
+                    <div class="tool-actions">
+                        <button class="btn-icon-3d"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="markdown-container">
+                    <div class="markdown-editor">
+                        <div class="editor-toolbar">
+                            <button class="btn-icon-3d small"><i class="fas fa-bold"></i></button>
+                            <button class="btn-icon-3d small"><i class="fas fa-italic"></i></button>
+                            <button class="btn-icon-3d small"><i class="fas fa-link"></i></button>
+                            <button class="btn-icon-3d small"><i class="fas fa-list-ul"></i></button>
+                            <button class="btn-icon-3d small"><i class="fas fa-list-ol"></i></button>
+                        </div>
+                        <textarea class="editor-textarea"># Heading
+**Bold text**
+- List item 1
+- List item 2
+
+[Link](https://example.com)</textarea>
+                    </div>
+                    <div class="markdown-preview">
+                        <h1>Heading</h1>
+                        <p><strong>Bold text</strong></p>
+                        <ul>
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                        </ul>
+                        <p><a href="https://example.com">Link</a></p>
+                    </div>
+                </div>
+                <div class="markdown-footer">
+                    <div class="word-count">Words: 12</div>
+                    <button class="btn-3d btn-primary-3d small">
+                        <i class="fas fa-save"></i> Save
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Calendar -->
+            <div class="tool-card-3d calendar-card">
+                <div class="tool-header">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Weekly Planner</h3>
+                    <div class="tool-actions">
+                        <button class="btn-icon-3d"><i class="fas fa-chevron-left"></i></button>
+                        <span class="current-week">May 15 - 21, 2023</span>
+                        <button class="btn-icon-3d"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-day">
+                        <div class="day-header">Mon</div>
+                        <div class="day-number">15</div>
+                        <div class="calendar-event primary">Standup 9am</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">Tue</div>
+                        <div class="day-number">16</div>
+                        <div class="calendar-event info">Sprint planning</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">Wed</div>
+                        <div class="day-number">17</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">Thu</div>
+                        <div class="day-number">18</div>
+                        <div class="calendar-event success">Demo day</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">Fri</div>
+                        <div class="day-number">19</div>
+                    </div>
+                    <div class="calendar-day weekend">
+                        <div class="day-header">Sat</div>
+                        <div class="day-number">20</div>
+                    </div>
+                    <div class="calendar-day weekend">
+                        <div class="day-header">Sun</div>
+                        <div class="day-number">21</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- JSON Viewer -->
+            <div class="tool-card-3d json-card">
+                <div class="tool-header">
+                    <i class="fas fa-file-code"></i>
+                    <h3>JSON Viewer</h3>
+                    <div class="tool-actions">
+                        <button class="btn-icon-3d"><i class="fas fa-copy"></i></button>
+                        <button class="btn-icon-3d"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="json-container">
+                    <textarea class="json-input">{
+  "name": "Productivity Suite",
+  "version": "1.0.0",
+  "features": ["tasks", "notes", "timer"],
+  "stats": {
+    "users": 1500,
+    "rating": 4.8
+  }
+}</textarea>
+                    <div class="json-viewer">
+                        <div class="json-line"><span class="json-brace">{</span></div>
+                        <div class="json-line indent-1"><span class="json-key">"name"</span><span class="json-colon">:</span> <span class="json-string">"Productivity Suite"</span><span class="json-comma">,</span></div>
+                        <div class="json-line indent-1"><span class="json-key">"version"</span><span class="json-colon">:</span> <span class="json-string">"1.0.0"</span><span class="json-comma">,</span></div>
+                        <div class="json-line indent-1"><span class="json-key">"features"</span><span class="json-colon">:</span> <span class="json-bracket">[</span></div>
+                        <div class="json-line indent-2"><span class="json-string">"tasks"</span><span class="json-comma">,</span></div>
+                        <div class="json-line indent-2"><span class="json-string">"notes"</span><span class="json-comma">,</span></div>
+                        <div class="json-line indent-2"><span class="json-string">"timer"</span></div>
+                        <div class="json-line indent-1"><span class="json-bracket">]</span><span class="json-comma">,</span></div>
+                        <div class="json-line indent-1"><span class="json-key">"stats"</span><span class="json-colon">:</span> <span class="json-brace">{</span></div>
+                        <div class="json-line indent-2"><span class="json-key">"users"</span><span class="json-colon">:</span> <span class="json-number">1500</span><span class="json-comma">,</span></div>
+                        <div class="json-line indent-2"><span class="json-key">"rating"</span><span class="json-colon">:</span> <span class="json-number">4.8</span></div>
+                        <div class="json-line indent-1"><span class="json-brace">}</span></div>
+                        <div class="json-line"><span class="json-brace">}</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Regex Tester -->
+            <div class="tool-card-3d regex-card">
+                <div class="tool-header">
+                    <i class="fas fa-search"></i>
+                    <h3>Regex Tester</h3>
+                    <div class="tool-actions">
+                        <button class="btn-icon-3d"><i class="fas fa-history"></i></button>
+                    </div>
+                </div>
+                <div class="regex-input-group">
+                    <div class="regex-flags">
+                        <button class="btn-icon-3d small active"><i class="fas fa-check-circle"></i> g</button>
+                        <button class="btn-icon-3d small"><i class="far fa-circle"></i> i</button>
+                        <button class="btn-icon-3d small"><i class="far fa-circle"></i> m</button>
+                    </div>
+                    <input type="text" class="regex-pattern" value="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b" placeholder="Enter regex pattern">
+                </div>
+                <div class="regex-test-area">
+                    <textarea class="regex-test-string">Contact us at info@example.com or support@test.org for assistance.</textarea>
+                    <div class="regex-matches">
+                        <div class="regex-match-count">2 matches found</div>
+                        <div class="regex-highlighted-text">
+                            Contact us at <span class="regex-match">info@example.com</span> or 
+                            <span class="regex-match">support@test.org</span> for assistance.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sticky Notes -->
+            <div class="tool-card-3d notes-card">
+                <div class="tool-header">
+                    <i class="fas fa-sticky-note"></i>
+                    <h3>Sticky Notes</h3>
+                    <div class="tool-actions">
+                        <button class="btn-icon-3d"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="notes-grid">
+                    <div class="note-3d yellow">
+                        <textarea>Meeting at 2pm with design team</textarea>
+                        <div class="note-footer">
+                            <div class="note-date">Today</div>
+                            <button class="btn-icon-3d small"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="note-3d blue">
+                        <textarea>Check analytics dashboard for updates</textarea>
+                        <div class="note-footer">
+                            <div class="note-date">Today</div>
+                            <button class="btn-icon-3d small"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="note-3d green">
+                        <textarea>Review PR #42 for new feature</textarea>
+                        <div class="note-footer">
+                            <div class="note-date">Tomorrow</div>
+                            <button class="btn-icon-3d small"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="note-3d pink">
+                        <textarea>Update dependencies</textarea>
+                        <div class="note-footer">
+                            <div class="note-date">This week</div>
+                            <button class="btn-icon-3d small"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-3d">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-3d">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Productivity &<span> Dev Tools</span></span></h3>
+                    <p>Ultimate tools for developers and creative professionals.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Tools</h4>
+                        <ul>
+                            <li><a href="#">Task Manager</a></li>
+                            <li><a href="#">Markdown Editor</a></li>
+                            <li><a href="#">Pomodoro Timer</a></li>
+                            <li><a href="#">Code Snippets</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon-3d"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon-3d"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon-3d"><i class="fab fa-discord"></i></a>
+                <a href="#" class="social-icon-3d"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Productivity & Dev Tools. All rights reserved.Developed By Chandan</p>
+                <div class="footer-badges">
+                    <span class="badge-3d">Developer Favorite</span>
+                    <span class="badge-3d">Hackathon Winner</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./theme.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
